@@ -18,7 +18,7 @@ export function QrCodeDialog() {
   const [open, setOpen] = React.useState(false)
   const pathname = usePathname()
   const roomId = pathname ? pathname.split('/').pop() : ''
-  const qrCodeUrl = `https://session-7grjpg40d-hasesho05s-projects.vercel.app/${roomId}`
+  const qrCodeUrl = `https://session-livid.vercel.app/${roomId}`
 
   return (
     <>

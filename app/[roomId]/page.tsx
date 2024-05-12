@@ -24,7 +24,7 @@ const Room: React.FC = () => {
   const [sessions, setSessions] = useState<Session[]>([])
   const pathname = usePathname()
   const roomId = pathname ? pathname.split('/').pop() : ''
-  const sessionsWrapper = useRef(null)
+  const sessionsWrapper = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (!roomId) return
